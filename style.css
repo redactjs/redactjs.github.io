@@ -1,0 +1,26 @@
+html{-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;-webkit-tap-highlight-color: transparent;background-color:white;color:black;}
+body{height:100%;min-width:320px;margin:1rem;line-height: 1.5;font-family:system, -apple-system, ".SFNSText-Regular", "San Francisco", "Oxygen", "Ubuntu", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;box-sizing:border-box;}
+body{line-height:calc(1.4em + 1vw);font-size:(1rem);max-width:47em;margin:auto;padding:1rem;}
+a,a:link,a:visited{color:inherit;}
+h1, h2, h3, h4, h5, h6, p, blockquote, pre{margin:0.2em 0.2em 0.5em 0;}
+h1, h2{font-size:1.5rem;}
+h1, h3, h5{font-weight:bold;}
+h3, h4{font-size:1rem;}
+h5, h6{font-size:0.7rem;}
+h2, h4, h6{font-weight:normal;}
+
+nav a:before{content:'» ';}
+nav{font-size:smaller;line-height:1.2;}
+nav a{text-decoration:none;display:inline-block;padding:0.5em 0.5em 0.5em 0;margin:0 0.1em 0.2em 0;}
+
+@media print{
+	html,body{color:black;background:white;font-weight:normal;font-size:10pt;line-height:1.4;max-width:100%;}
+	a,a:link{text-decoration:none;}
+	nav{display:none;}
+	nav a:first-of-type{display:none;}
+	nav a{display:block;line-height:1;}
+	a:after{content:' ' attr(href);}
+}
+@media (max-width:600px), (max-height:600px){
+	nav a{margin:0 0.5em 1em 0;}
+}
