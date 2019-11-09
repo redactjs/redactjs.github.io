@@ -104,6 +104,10 @@ class HTMLAnElement extends HTMLElement{
 	disconnectedCallback(){
 		this.componentWillUnount();
 	}
+/*
+var el = document.createElement('Any');
+el.constructor.name "HTMLUnknownElement"
+ * */
 	static get is(){
 		let name = this[ tagName ];
 		if(!name){
@@ -111,6 +115,9 @@ class HTMLAnElement extends HTMLElement{
 			customElements.define(name, this);
 		}
 		return name;
+	}
+	get is(){
+		return this.constructor.is;
 	}
 /*
 	get refs(){
